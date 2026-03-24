@@ -2,7 +2,7 @@
     --primario: #9c27b0 ;
     --primarioOscuro: #89119d;
     --secuandrio: #ffce00;
-    --secundarioOscuro: rgb(233,287,2);
+    --secundarioOscuro: rgb(233,187,2);
     --blanco: #fff;
     --negro: #000;
 
@@ -36,7 +36,7 @@ a{
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 
 }
 
@@ -116,9 +116,6 @@ h3{
     background-color:var(--primarioOscuro) ;
     padding: 1rem;
 }
-.producto__imagen{
-    width: 100%;
-}
 .producto__nombre{
     font-size: 4rem;
 }
@@ -161,6 +158,7 @@ h3{
 .nosotros {
     display: grid;
     grid-template-rows: repeat(2,auto);
+    margin: 2rem;
 }
 @media (min-width: 768px) {
     .nosotros {
@@ -171,8 +169,6 @@ h3{
 }
 .nosotros__imagen {
     grid-row: 1 /2;
-    width: 100%;
-
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
@@ -185,4 +181,62 @@ h3{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
+}
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.bloque { 
+    text-align:center;
+    margin: 2rem;
+}
+.bloque__titulo {
+    margin:0;
+}
+
+/** Pagina del Producto **/
+@media (min-width: 768px) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+.camisa {
+    padding: 2rem;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.formulario__campo{
+    border : 1rem solid var(--primarioOscuro);
+    background-color:rgb(126, 20, 153);
+    color:var(--blanco);
+    font-size: 2rem ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .formulario__campo {
+        width: 100%;
+    }    
+}
+.formulario__submit{
+    background-color: var(--secuandrio);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1/ 3;
+}
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
 }
