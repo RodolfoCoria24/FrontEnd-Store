@@ -21,15 +21,15 @@ Interfaz de tienda online desarrollada con **HTML5 y CSS3**, enfocada en la crea
 
 ### 🏠 Página principal
 
-![Home](img)
+![Home](img/home.jpeg)
 
 ### 🛒 Página de producto
 
-![Producto](img/producto.png)
+![Producto](img/producto.jpeg)
 
 ### 👥 Página nosotros
 
-![Nosotros](img/nosotros.png)
+![Nosotros](img/Nosotros-.jpeg)
 
 ---
 
